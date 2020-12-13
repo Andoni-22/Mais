@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <VideoView
+        android:id="@+id/videoView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnNuevaCuenta"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:layout_width="153dp"
+        android:layout_height="35dp"
+        android:text="@string/btnNuevo"
+        app:layout_constraintBottom_toBottomOf="@+id/videoView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        style="@style/Widget.MaterialComponents.TextInputEditText.FilledBox"
+        android:layout_width="280dp"
+        android:layout_height="46dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/videoView2"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.845" />
+
+    <Button
+        android:id="@+id/btnAcceder"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="442dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="688dp"
+        android:text="@string/btnAcceder"
+        android:textColorHighlight="@color/design_default_color_primary_dark"
+        android:textColorLink="#00000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.523" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
