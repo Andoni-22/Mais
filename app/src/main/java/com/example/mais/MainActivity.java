@@ -15,9 +15,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 import android.widget.VideoView;
 
-import java.util.logging.Logger;
-
-import model.User;
+import com.example.mais.model.User;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -87,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                 user.setNombre(cursor.getString((cursor.getColumnIndex("nombre"))));
                 user.setPwd(cursor.getString((cursor.getColumnIndex("pwd"))));
                 Toast.makeText(getApplicationContext(),"Datos recuperados",Toast.LENGTH_LONG).show();
-                Intent intent = new Intent(this,MenuActivcity.class);
+                Intent intent = new Intent(this,PsikoTropicActivity.class);
                 intent.putExtra("user",user);
                 startActivity(intent);
 

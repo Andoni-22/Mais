@@ -1,4 +1,4 @@
-package model;
+package com.example.mais.model;
 
 import java.io.Serializable;
 
